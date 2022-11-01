@@ -38,8 +38,8 @@
         }
         static void Main(string[] args)
         {
-            computeEmpWage("wipro", 20, 2, 10);
-            computeEmpWage("tcs", 10, 4, 20);
+            computeEmpWage("wipro : ", 20, 2, 10);
+            computeEmpWage("dxc : ", 10, 4, 20);
         }
     }
 }
