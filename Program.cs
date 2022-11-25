@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace EmployeeWageComputation
+namespace EmpWageComputation
 {
     class program
     {
@@ -8,12 +8,11 @@ namespace EmployeeWageComputation
 
         static void Main(string[] args)
         {
-            EmpWageBuilderObject dMart = new EmpWageBuilderObject("DMART ", 20, 2, 10);
-            EmpWageBuilderObject reliance = new EmpWageBuilderObject("Relience ", 10, 4, 20);
-            dMart.computeEmpWage();
-            Console.WriteLine(dMart.toString());
-            reliance.computeEmpWage();
-            Console.WriteLine(reliance.toString());
+            EmpWageBuilderArray empWageBuilderArray = new EmpWageBuilderArray();
+            empWageBuilderArray.addCompanyEmpWage("Wipro ", 20, 2, 10);
+            empWageBuilderArray.addCompanyEmpWage("DXC ", 10, 4, 20);
+            empWageBuilderArray.computeEmpWage();
+
         }
     }
 }
